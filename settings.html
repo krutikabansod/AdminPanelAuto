@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Settings</title><link rel="stylesheet" href="style.css"></head><body><div class="layout"><aside id="sidebar"></aside><main><header class="top"><button class="menu" onclick="toggleSide()">☰</button><div class="search">⌕ <input placeholder="Search..."></div><div class="admin">🔔 <b>Admin</b><small>Super Admin</small></div></header>
+<section id="settings" class="section"><div class="page-head"><div><h1>Settings</h1><p>Configure admin panel preferences and security.</p></div></div><div class="settings-grid">
+          <div class="panel setting-card"><h3>🔐 Login & Security</h3><label>Admin Email<input value="admin@autoverse.com"></label><label>New Password<input type="password" value="admin123"></label><label class="switch-row">Two-Factor Authentication <input type="checkbox" checked></label><button class="primary-btn save-setting">Save Security Settings</button></div>
+          <div class="panel setting-card"><h3>⚙ General Settings</h3><label>Website Name<input value="AutoVerse"></label><label>Currency<select><option>USD ($)</option><option>INR (₹)</option></select></label><label class="switch-row">Email Notifications <input type="checkbox" checked></label><label class="switch-row">Booking Notifications <input type="checkbox" checked></label><button class="primary-btn save-setting">Save General Settings</button></div>
+          
+        </div></section>
+
+
+</main></div><script src="script.js"></script></body></html>

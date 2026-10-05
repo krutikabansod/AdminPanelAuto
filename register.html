@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AutoVerse | Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+<div class="auth-card">
+<div class="auth-logo">🚘 <b>AutoVerse</b><span>Admin Panel</span></div>
+<h1>Create Account</h1><p>No database is used. Account is saved in this browser.</p>
+<form id="registerForm"><label>Full Name</label><input id="regName" required>
+<label>Username</label><input id="regUser" required minlength="3">
+<label>Email</label><input id="regEmail" type="email" required>
+<label>Password</label><input id="regPass" type="password" required minlength="6">
+<label>Confirm Password</label><input id="regConfirm" type="password" required>
+<div id="regError" class="error"></div><button class="btn primary">Create Account</button></form>
+<p class="center">Already registered? <a href="login.html">Login</a></p>
+<a class="back" href="index.html"></a></div>
+<script src="script.js"></script>
+</body>
+</html>

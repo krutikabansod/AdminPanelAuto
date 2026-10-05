@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Add Vehicle</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="layout">
+        <aside id="sidebar"></aside>
+        <main><header class="top"><button class="menu" onclick="toggleSide()">☰</button>
+            <div class="search">⌕ <input placeholder="Search..."></div><div class="admin">🔔 <b>Admin</b><small>Super Admin</small></div></header><section class="content"><div class="page"><div><h1>Add Vehicle</h1><p>Add or edit vehicle information.</p></div></div><section class="panel form"><form id="vehicleForm"><div class="form-grid"><div><label>Make</label><input id="make" required placeholder="Toyota"></div><div><label>Model</label><input id="model" required placeholder="RAV4"></div><div><label>Year</label><input id="year" type="number" required></div><div><label>Type</label><select id="type"><option>SUV</option><option>Sedan</option><option>Sports</option><option>Truck</option><option>Luxury</option><option>Other</option></select></div><div><label>Price</label><input id="price" required placeholder="CAD 38,900"></div><div><label>Status</label><select id="status"><option>Available</option><option>Sold</option><option>Unavailable</option></select></div><div class="full"><label>Image URL</label><input id="image" placeholder="images/car.jpg"></div><div class="full"><label>Description</label><textarea id="description" rows="5"></textarea></div></div><button class="btn primary">Save Vehicle</button><a class="btn secondary" href="vehicles.html">Cancel</a></form></section></section></main></div>
+            <script src="script.js"></script>
+            </body>
+            </html>

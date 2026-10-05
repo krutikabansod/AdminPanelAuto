@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AutoVerse | Dashboard</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="layout"><aside id="sidebar"></aside><main><header class="top"><button class="menu" onclick="toggleSide()">☰</button><div class="search">⌕ <input placeholder="Search vehicles, users, bookings..."></div><div class="admin">🔔 <b id="adminName">Admin</b><small>Super Admin</small></div></header>
+<section class="content"><div class="welcome"><div><h1>Welcome Back, Admin! 👋</h1><p>Here's what's happening with your vehicle management system today.</p></div><div class="date" id="date"></div></div>
+<div class="stats">
+<div class="stat burgundy"><span>🚗</span><div>Total Vehicles<strong id="vehicleCount">0</strong><small>↑ 12% vs last month</small></div></div>
+<div class="stat dark"><span>👥</span><div>Total Bookings<strong>18</strong><small>↑ 20% vs last month</small></div></div>
+<div class="stat green"><span>♟</span><div>Total Users<strong id="userCount">0</strong><small>↑ 8% vs last month</small></div></div>
+<div class="stat gold"><span>✉</span><div>New Messages<strong>7</strong><small>↑ 40% vs last month</small></div></div></div>
+<div class="columns"><section class="panel"><div class="head"><h2>Vehicle Statistics</h2><b>● Vehicles Added</b></div><div class="fake-chart"><i></i></div><div class="months">Jan　 Feb　 Mar　 Apr　 May　 Jun　 Jul　 Aug　 Sep　 Oct　 Nov　 Dec</div></section>
+<section class="panel"><div class="head"><h2>Vehicle Types</h2></div><div class="donut-wrap"><div class="donut"><strong id="donut">0</strong><small>Total Vehicles</small></div><div id="legend" class="legend"></div></div></section></div>
+<div class="columns lower"><section class="panel"><div class="head"><h2>Recent Vehicles</h2><a href="vehicles.html">View All</a></div><div class="table-scroll"><table><thead><tr><th>Image</th><th>Name</th><th>Type</th><th>Price</th><th>Status</th><th>Actions</th></tr></thead><tbody id="recent"></tbody></table></div></section>
+<div><section class="panel"><div class="head"><h2>Quick Actions</h2></div><div class="quick"><a href="add-vehicle.html">🚗 Add Vehicle</a><a href="vehicles.html">☷ Manage Vehicles</a><a href="users.html">♟ View Users</a><a href="bookings.html">▣ View Bookings</a></div></section>
+<section class="panel"><div class="head"><h2>Latest Bookings</h2><a href="bookings.html">View All</a></div><table><tbody><tr><td>Rahul Sharma</td><td>BMW X5</td><td>Apr 28, 2025</td><td><em class="ok">Confirmed</em></td></tr><tr><td>Sneha Patel</td><td>Toyota Corolla</td><td>Apr 27, 2025</td><td><em class="pending">Pending</em></td></tr><tr><td>Amit Verma</td><td>Ford Mustang</td><td>Apr 26, 2025</td><td><em class="ok">Confirmed</em></td></tr><tr><td>Pooja Singh</td><td>Honda Civic</td><td>Apr 25, 2025</td><td><em class="danger">Cancelled</em></td></tr></tbody></table></section></div></div>
+</section></main></div><script src="script.js"></script></body></html>
